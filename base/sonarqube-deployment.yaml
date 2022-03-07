@@ -5,7 +5,7 @@ metadata:
     app: sonarqube
     app.kubernetes.io/component: sonarqube
     app.kubernetes.io/instance: sonarqube
-    app.kubernetes.io/part-of: sonarqube
+    app.kubernetes.io/part-of: sonarqube-app
     deploymentconfig: sonarqube
   annotations:
     app.openshift.io/connects-to: database
