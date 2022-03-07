@@ -1,0 +1,3 @@
+resources:
+- sonarqube-argo-app.yaml
+- sonarqube-app.yaml
