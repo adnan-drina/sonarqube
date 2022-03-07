@@ -5,7 +5,7 @@ metadata:
     app: sonarqube
     app.kubernetes.io/component: postgresql-sonarqube-data-pvc
     app.kubernetes.io/instance: sonarqube
-    app.kubernetes.io/part-of: sonarqube
+    app.kubernetes.io/part-of: sonarqube-app
   finalizers:
     - kubernetes.io/pvc-protection
   name: postgresql-sonarqube-data

@@ -5,7 +5,7 @@ metadata:
     app: sonarqube
     app.kubernetes.io/component: postgresql-sonarqube-svc
     app.kubernetes.io/instance: sonarqube
-    app.kubernetes.io/part-of: sonarqube
+    app.kubernetes.io/part-of: sonarqube-app
   name: postgresql-sonarqube
 spec:
   ports:
