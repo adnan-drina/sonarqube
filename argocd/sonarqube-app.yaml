@@ -2,11 +2,11 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   creationTimestamp: null
-  name: coolstore-monitoring-app
+  name: sonarqube-app
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: coolstore-monitoring
+    namespace: sonarqube
     server: https://kubernetes.default.svc
   ignoreDifferences:
     - group: route.openshift.io
