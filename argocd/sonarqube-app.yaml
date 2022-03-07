@@ -16,6 +16,7 @@ spec:
       kind: Route
   project: default
   source:
+    path: .
     repoURL: https://github.com/adnan-drina/sonarqube.git
   syncPolicy:
     automated:
