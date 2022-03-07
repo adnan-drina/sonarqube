@@ -1,0 +1,4 @@
+namespace: sonarqube
+
+bases:
+- overlays

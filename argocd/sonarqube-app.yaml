@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  creationTimestamp: null
+  name: coolstore-monitoring-app
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: coolstore-monitoring
+    server: https://kubernetes.default.svc
+  ignoreDifferences:
+    - group: route.openshift.io
+      jsonPointers:
+        - /spec/host
+        - /status/ingress
+      kind: Route
+  project: default
+  source:
+    repoURL: https://github.com/adnan-drina/coolstore-monitoring.git
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+status:
+  health: {}
+  summary: {}
+  sync:
+    comparedTo:
+      destination: {}
+      source:
+        repoURL: ""
+    status: ""
