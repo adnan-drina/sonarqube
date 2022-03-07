@@ -16,7 +16,7 @@ spec:
       kind: Route
   project: default
   source:
-    repoURL: https://github.com/adnan-drina/coolstore-monitoring.git
+    repoURL: https://github.com/adnan-drina/sonarqube.git
   syncPolicy:
     automated:
       prune: true
